@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    font-family: cursive;
+    text-align: center;
+}
+h1 {
+    color: black;
+    font-size: 4em;
+}
+.glow {
+    animation: glow .5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(248, 98, 178), 0 0 20px rgb(248, 98, 178), 0 0 30px deeppink, 0 0 40px deeppink, 0 0 50px deeppink, 0 0 60px deeppink ,0 0 70px deeppink;
+    }
+    to {
+        text-shadow: 0 0 10px rgb(248, 98, 178), 0 0 20px rgb(248, 98, 178) ,0 0 30px deeppink, 0 0 40px deeppink, 0 0 50px deeppink, 0 0 60px deeppink, 0 0 70px deeppink, 0 0 80px deeppink; 
+    }
+}
+#outer-div {
+    margin:auto;
+    width: 75vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#drum-machine {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 50%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgb(248, 98, 178), 0 6px 20px 0 deeppink;
+}
+
+.btn-group {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.drum-pad {
+    background-color: black;
+    border: 3px groove deeppink;
+    border-radius: 12px;
+    color: silver;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px #999;
+    display: flex;
+    flex-direction: column;
+    
+}
+.drum-pad:hover {
+    background-color: #999;
+    color: black;
+}
+.drum-pad:active {
+    background-color: rgb(248, 98, 178);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.left {
+    display: flex;
+    flex-direction: row;
+    color: deeppink;
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
